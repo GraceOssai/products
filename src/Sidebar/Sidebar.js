@@ -11,8 +11,8 @@ const Sidebar = () => {
         <h1>🛒</h1>
       </div>
       <Category />
-      <Colors />
       <Price />
+      <Colors />
     </div>
   );
 };
