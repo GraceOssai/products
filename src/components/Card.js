@@ -1,28 +1,27 @@
 import React from 'react'
-import { CiStar } from "react-icons/ci";
 import { IoBag } from "react-icons/io5";
 
-const Card = () => {
+const Card = ({ img, title, star, reviews, newPrice, prevPrice }) => {
   return (
     <div>
       <section class="card">
         <img
-          src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
-          alt=""
+          src={img}
+          alt={title}
           className="card-img"
         />
         <div class="card-details">
-          <h3 className="card-title">shoe</h3>
+          <h3 className="card-title">{title}</h3>
           <section className="card-reviews">
-            <CiStar className="ratings-starts" />
-            <CiStar className="ratings-starts" />
-            <CiStar className="ratings-starts" />
-            <CiStar className="ratings-starts" />
-            <span className="total-reviews">4</span>
+            {star}
+            {star}
+            {star}
+            {star}
+            <span className="total-reviews">{reviews}</span>
           </section>
           <section className="card-price">
             <div class="price">
-              <del>$300</del> 200
+              <del>{prevPrice}</del> {newPrice}
             </div>
             <div class="bag">
               <IoBag />
@@ -32,6 +31,6 @@ const Card = () => {
       </section>
     </div>
   );
-}
+};
 
 export default Card
