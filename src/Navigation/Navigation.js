@@ -17,15 +17,15 @@ const Navigation = ({ handleInputChange }) => {
         />
       </div>
       <div className="profile-container">
-        <a href="#">
+        <button href="#">
           <CiHeart className="nav-icons" />
-        </a>
-        <a>
+        </button>
+        <button>
           <FaShoppingCart className="nav-icons" />
-        </a>
-        <a>
+        </button>
+        <button>
           <FaUserAlt className="nav-icons" />
-        </a>
+        </button>
       </div>
     </nav>
   );

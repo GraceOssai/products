@@ -19,8 +19,13 @@ input {
   width: 14rem;
 }
 
+.profile-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .nav-icons {
   width: 1.5rem;
   height: 1.5rem;
-  margin-left: 2rem;
+  cursor: pointer;
 }
