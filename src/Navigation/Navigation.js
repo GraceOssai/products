@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 
-const Navigation = ({ handleInputChange }) => {
+const Navigation = ({ handleInputChange, query }) => {
   console.log(handleInputChange)
   return (
     <nav>
@@ -13,6 +13,7 @@ const Navigation = ({ handleInputChange }) => {
           type="text"
           placeholder="Search for your shoes"
           className="search-input"
+          value={query}
           onChange={handleInputChange}
         />
       </div>
